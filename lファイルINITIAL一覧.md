@@ -1,0 +1,52 @@
+# INITIAL一覧
+
+"true" return TRUE_T;  
+"false" return FALSE_T;
+"if" return IF;
+"else" return ELSE;
+"elseif" return ELSEIF;
+"swich" return SWITCH;
+"case" return CASE;
+"while" return WHILE;
+"for" return FOR;
+"continue" return CONTINUE;
+"break" return BREAK;
+"return" return RETURN;
+"func" return FUNCTION;
+"(" return LPAREN;
+")" return RPAREN;
+"{" return LBRACE;
+"}" return RBRACE;
+"[" return LBRACKET;
+"]" return RBRACKET;
+":" return COLON;
+";" return SEMICOLON;
+"," return COMMA;
+"+=" return ADD_ASSIGN;
+"-=" return SUB_ASSIGN;
+"*=" return MUL_ASSIGN;
+"/=" return DIV_ASSIGN;
+"%=" return MOD_ASSIGN;
+"**=" return POW_ASSIGN;
+"==" return EQ;
+"!=" return NEQ;
+"<" return LT;
+">" return GT;
+"<=" return LE;
+">=" return GE;
+"&&" return AND;
+"||" return OR;
+"and" return AND;
+"or" return OR;
+"not" return NOT;
+"!" return NOT;
+"**" return POW;
+"*" return MUL;
+"/" return DIV;
+"%" return MOD;
+"+" return ADD;
+"-" return SUB;
+"=" return ASSIGN;
+
+"/*" { BEGIN(COMMENT);}
+[/][/] + { BEGIN(LINE_COMMENT);}
